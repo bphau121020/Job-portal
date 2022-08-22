@@ -1,0 +1,64 @@
+.content {
+  margin-top: 100px;
+  margin-bottom: 304px;
+  @include flex(center, space-between);
+  &__left {
+    width: 100%;
+    max-width: 497px;
+    &__title {
+      font-family: $second-font;
+      font-weight: 700;
+      font-size: 66px;
+      margin-bottom: 36px;
+    }
+    &__sub {
+      font-size: 18px;
+      color: $txt-second-color;
+      margin-bottom: 42px;
+    }
+    &__function {
+      @include flex(center, space-between);
+      background: $main-bg;
+      box-shadow: 0px 16px 52px rgba(0, 0, 0, 0.07);
+      border-radius: 8px;
+      i {
+        color: $txt-second-color;
+        font-size: 20px;
+      }
+      .txt {
+        margin-left: 10px;
+        font-family: $main-font;
+        font-size: 14px;
+        color: #a3a6b1;
+        line-height: 171%;
+      }
+      .main__function {
+        @include flex(center, space-between);
+        margin: 32px 25px;
+        &__search {
+          input {
+            border: none;
+          }
+        }
+        &__drop {
+          @include flex(center, space-between);
+          .btn--show {
+            margin-left: 55px;
+            cursor: pointer;
+          }
+        }
+      }
+      .search__function {
+        a {
+          padding: 23px;
+          background: $txt-fourth-color;
+          border-radius: 8px;
+          margin-right: 5px;
+        }
+        i {
+          color: $txt-white;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,24 @@
+.global-title {
+  font-family: $second-font;
+  font-size: 46px;
+  font-weight: bold;
+}
+.global-sub {
+  color: $txt-second-color;
+  font-size: 16px;
+}
+.global-infomation {
+  text-align: center;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 446px;
+  .global-title {
+    margin-bottom: 24px;
+  }
+  .global-sub {
+    margin-bottom: 74px;
+  }
+}
+.margin-global {
+  margin-bottom: 180px;
+}

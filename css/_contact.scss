@@ -1,0 +1,36 @@
+.contact {
+  position: relative;
+  text-align: center;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 482px;
+  .global-title {
+    margin-bottom: 24px;
+  }
+  .global-sub {
+    margin-bottom: 38px;
+  }
+  &__send-email {
+    @include flex(center, space-between);
+    position: absolute;
+    bottom: -50%;
+    left: 12%;
+    background: $main-bg;
+    border-radius: 4px;
+    &__txt {
+      margin-left: 25px;
+      width: 100%;
+      border: none;
+      font-size: 14px;
+    }
+    &__btn {
+      margin: 4px;
+      padding: 10px 26px;
+      font-size: 16px;
+      color: $txt-white;
+      cursor: pointer;
+      background: #ff6652;
+      border-radius: 4px;
+    }
+  }
+}

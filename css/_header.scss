@@ -1,0 +1,38 @@
+.container-fluid {
+  .header__main {
+    margin-top: 36px;
+    @include flex(center, space-between);
+    .logo {
+      color: #000;
+      font-size: 26px;
+      font-weight: bold;
+      font-family: $second-font;
+    }
+    .menu {
+      @include flex(center, space-between);
+      &__item {
+        font-size: $font-small;
+        color: $txt-main-color;
+        margin-left: 45px;
+        .menu-link {
+          font-weight: 400;
+          opacity: 0.4;
+        }
+      }
+    }
+  }
+  .btn__auth {
+    &__login {
+      padding: 21px 24px;
+      border-radius: 10px;
+      border: 1px solid rgb(12, 17, 34, 0.1);
+    }
+    &__get {
+      padding: 21px 34px;
+      border-radius: 10px;
+      color: $txt-white;
+      font-weight: 600;
+      background: $main-color;
+    }
+  }
+}

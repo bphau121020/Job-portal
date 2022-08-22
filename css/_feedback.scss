@@ -1,0 +1,29 @@
+.feedback {
+  @include flex(center, space-between);
+  &__left {
+    margin-right: 130px;
+  }
+  &__right {
+    width: 100%;
+    max-width: 570px;
+    &__title {
+      margin-bottom: 70px;
+      max-width: 466px;
+    }
+    &__sub {
+      font-style: italic;
+      font-weight: 500;
+      font-size: 26px;
+      line-height: 38px;
+      color: $txt-second-color;
+      margin-bottom: 38px;
+    }
+    &__name {
+      font-weight: 600;
+      font-size: 18px;
+    }
+  }
+  &__job {
+    font-size: 14px;
+  }
+}

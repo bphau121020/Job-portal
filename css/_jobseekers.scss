@@ -1,0 +1,25 @@
+.jobseekers {
+  @include flex(center, space-between);
+  &__title {
+    width: 100%;
+    max-width: 470px;
+    .global-title {
+      margin-bottom: 24px;
+    }
+    .global-sub {
+      margin-bottom: 37px;
+    }
+    &__list {
+      &--check {
+        margin-bottom: 20px;
+        i {
+          color: #00b7b4;
+          margin-right: 9px;
+        }
+        span {
+          font-weight: 500;
+        }
+      }
+    }
+  }
+}

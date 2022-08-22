@@ -1,0 +1,73 @@
+.find-job {
+  &__card {
+    @include flex(center, space-between);
+    margin-bottom: 30px;
+    &__main {
+      transition: transform 0.2s;
+      width: 370px;
+      background: $main-bg;
+      box-shadow: 0px 18px 56px rgba(0, 0, 0, 0.05);
+      border: 1px solid #efefef;
+      border-radius: 14px;
+      &--item {
+        margin: 30px 22px;
+        .main--item--header {
+          border-bottom: 1px solid #e9e9ee;
+          h2 {
+            font-family: $second-font;
+            font-weight: 700;
+            font-size: 22px;
+            line-height: 145%;
+            margin-bottom: 14px;
+          }
+          &--status {
+            margin-bottom: 38px;
+            i {
+              color: $txt-second-color !important;
+            }
+            span {
+              color: #605858;
+              font-size: 14px;
+              margin-left: 6px;
+            }
+          }
+        }
+        .main-item--footer {
+          margin-top: 22px;
+          @include flex(center, space-between);
+          &--child {
+            display: flex;
+            align-items: center;
+            .logo-name {
+              margin-left: 12px;
+              font-weight: 600;
+              font-size: 14px;
+            }
+            .time-up {
+              font-size: 14px;
+              color: $txt-second-color;
+            }
+          }
+        }
+      }
+    }
+  }
+  .find-job__btn {
+    padding-top: 43px;
+    text-align: center;
+    cursor: pointer;
+    span {
+      background: $txt-fourth-color;
+      padding: 18px 42px;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 28px;
+      color: $txt-white;
+      border-radius: 8px;
+      transition: transform 0.2s;
+      &:hover {
+        background: #fd2b2b;
+      }
+    }
+  }
+}
